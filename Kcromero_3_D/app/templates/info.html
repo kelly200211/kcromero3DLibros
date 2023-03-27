@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Informacion</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+</head>
+
+<body>
+  
+  <main class="container mt-5">
+        
+        <div class="container-fluid">
+        <h2><strong>Libro:</strong> {{libro.nombre}}</h2>
+        <p style="text-align: justify"><strong>Genero:</strong> {{genero.nombre}}</p>
+        <p style="text-align: justify"><strong>Editorial:</strong> {{libro.editorial}}</p>
+        <p style="text-align: justify"><strong>Paginas:</strong> {{libro.paginas}}</p>
+        <p style="text-align: justify"><strong>Año de Publicacion:  </strong> {{libro.anio_publicacion}}</p>
+        <p style="text-align: justify"><strong>Descripcion del libro: </strong> {{libro.descripcion}}</p>
+            <p style="text-align: justify"><strong>Fecha de Prestamo</strong> {{prestamo.fecha_prestamo}}</p>
+            <p style="text-align: justify"><strong>Fecha de Devolucion</strong> {{prestamo.fecha_devolucion}}</p>
+        <a class="btn btn-outline-light" href="{% url 'home' %}">Regresar</a>
+        </div>
+</main>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
